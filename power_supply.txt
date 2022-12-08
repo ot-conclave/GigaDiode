@@ -83,3 +83,12 @@ different land patterns.....
 - Wurth 7447709470
 - Wurth 784770470
 - Wurth 7847709470
+
+Upon placing that huge inductor in the layout, it seems incredibly
+disproportionately too large.  Maybe a slightly lower inductance could be okay,
+to get to a smaller package (but gotta keep Isat >= 3.0A).  How about Bourns
+SRN6045TA-220M, it's 22uH, 96 mohm, 3.3A Isat, semi-shielded, and only
+6.0x6.0mm.  Except... uh-oh, the smaller inductance means it will experience a
+higher Ipeak.
+
+How about Panasonic ETQ-P4M470KFM, a 47uH at 7.4x7.0mm.
