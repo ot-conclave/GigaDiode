@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP LTC3622*DE
+D 17V, Dual 1A, Synchronous Step-Down Regulator with Ultralow Quiescent Current
+$ENDCMP
+#
 #End Doc Library

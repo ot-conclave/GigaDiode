@@ -4,12 +4,12 @@ EELAYER 26 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "JVC43A"
-Date "2022-12-05"
-Rev "NC"
-Comp ""
-Comment1 ""
+Date "2022-12-07"
+Rev "1"
+Comp "©2022 OT Collective"
+Comment1 "Licensed under the TAPR Open Hardware License v1.0"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -179,6 +179,12 @@ NoConn ~ 5800 1100
 NoConn ~ 5800 1250
 NoConn ~ 5800 1400
 NoConn ~ 5800 1500
+$Sheet
+S 2000 4000 1000 1000
+U 63912954
+F0 "Power_Supply" 50
+F1 "psu.sch" 50
+$EndSheet
 Wire Bus Line
 	1600 1100 2800 1100
 $EndSCHEMATC
