@@ -12,8 +12,10 @@
   (page B)
   (title_block
     (title JVC43A)
-    (date 2022-12-05)
-    (rev NC)
+    (date 2022-12-07)
+    (rev 1)
+    (company "©2022 OT Collective")
+    (comment 1 "Licensed under the TAPR Open Hardware License v1.0")
   )
 
   (layers
@@ -44,7 +46,7 @@
   )
 
   (setup
-    (last_trace_width 0.635)
+    (last_trace_width 0.2032)
     (user_trace_width 0.2032)
     (user_trace_width 0.635)
     (trace_clearance 0.2032)
