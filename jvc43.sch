@@ -5,10 +5,10 @@ EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 4
-Title "JVC43A"
-Date "2022-12-07"
+Title "GigaDiode / JVC43A"
+Date "2022-12-09"
 Rev "1"
-Comp "©2022 OT Collective"
+Comp "©2022 OT Conclave"
 Comment1 "Licensed under the TAPR Open Hardware License v1.0"
 Comment2 ""
 Comment3 ""
