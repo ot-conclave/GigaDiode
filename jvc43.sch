@@ -284,7 +284,7 @@ Wire Wire Line
 	2600 3500 1900 3500
 Wire Wire Line
 	1900 3500 1900 3650
+Connection ~ 2600 3500
 Wire Bus Line
 	1600 1100 2800 1100
-Connection ~ 2600 3500
 $EndSCHEMATC

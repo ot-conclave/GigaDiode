@@ -987,22 +987,6 @@ F 4 "MPZ1608S601ATD25" V 5100 950 50  0001 C CNN "Part#"
 	1    5100 950 
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:C C301
-U 1 1 639B9E37
-P 5400 1100
-AR Path="/638EC3A5/639B9E37" Ref="C301"  Part="1" 
-AR Path="/638E68FB/639B9E37" Ref="C201"  Part="1" 
-F 0 "C301" H 5450 1200 50  0000 L CNN
-F 1 "10n" H 5450 1000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 950 50  0001 C CNN
-F 3 "~" H 5400 1100 50  0001 C CNN
-F 4 "10V" H 5400 1100 50  0001 C CNN "Voltage"
-	1    5400 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 950  5400 950 
 Connection ~ 5750 1200
 $Comp
 L power:GND #PWR0301
@@ -1141,9 +1125,6 @@ $EndComp
 Connection ~ 7200 6950
 Wire Wire Line
 	5750 950  5750 1200
-Connection ~ 5400 950 
-Wire Wire Line
-	5400 950  5750 950 
 NoConn ~ 5600 4600
 NoConn ~ 3400 4700
 NoConn ~ 3400 4800
@@ -1594,10 +1575,12 @@ Text Label 5300 4600 0    50   ~ 0
 XO
 Wire Wire Line
 	5200 4100 5600 4100
+Text Label 5300 4100 0    50   ~ 0
+TDO
 Wire Bus Line
 	3200 3400 3200 4100
 Wire Bus Line
 	3200 2100 3200 2800
-Text Label 5300 4100 0    50   ~ 0
-TDO
+Wire Wire Line
+	5250 950  5750 950 
 $EndSCHEMATC
