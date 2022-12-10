@@ -22,6 +22,7 @@ F 0 "J401" H 2105 2867 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 2105 2776 50  0000 C CNN
 F 2 "myfp:USB_C_GCT_USB4085" H 2150 2000 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2150 2000 50  0001 C CNN
+F 4 "USB4085-GF-A" H 2000 2000 50  0001 C CNN "Part#"
 	1    2000 2000
 	1    0    0    -1  
 $EndComp
@@ -122,6 +123,7 @@ F 0 "U401" H 9000 2765 50  0000 C CNN
 F 1 "LTC3622*DE" H 9000 2674 50  0000 C CNN
 F 2 "Package_DFN_QFN:DFN-14-1EP_3x4mm_P0.5mm_EP1.7x3.3mm" H 9000 2850 50  0001 C CNN
 F 3 "" H 9000 2000 50  0001 C CNN
+F 4 "LTC3622IDE#PBF" H 9000 2000 50  0001 C CNN "Part#"
 	1    9000 2000
 	1    0    0    -1  
 $EndComp
