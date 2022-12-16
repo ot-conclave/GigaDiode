@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/user/projects/jvc43/jvc43.sch)
-    (date "Thu 15 Dec 2022 08:53:48 PM PST")
+    (date "Thu 15 Dec 2022 09:48:10 PM PST")
     (tool "Eeschema 5.0.2+dfsg1-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1452,20 +1452,20 @@
       (sheetpath (names /Power_Supply/) (tstamps /63912954/))
       (tstamp 63929767))
     (comp (ref L402)
-      (value 4.2uH)
-      (footprint myfp:L_5.8x5.8mm_cutcir_6.3mm)
-      (datasheet ~)
-      (fields
-        (field (name Part#) SRR5028-4R2Y))
-      (libsource (lib Device) (part L) (description Inductor))
-      (sheetpath (names /Power_Supply/) (tstamps /63912954/))
-      (tstamp 6392A50D))
-    (comp (ref L403)
       (value 6.2uH)
       (footprint myfp:L_5.8x5.8mm_cutcir_6.3mm)
       (datasheet ~)
       (fields
         (field (name Part#) SRR5028-6R2Y))
+      (libsource (lib Device) (part L) (description Inductor))
+      (sheetpath (names /Power_Supply/) (tstamps /63912954/))
+      (tstamp 6392A50D))
+    (comp (ref L403)
+      (value 15uH)
+      (footprint myfp:L_5.8x5.8mm_cutcir_6.3mm)
+      (datasheet ~)
+      (fields
+        (field (name Part#) SRR5028-150Y))
       (libsource (lib Device) (part L) (description Inductor))
       (sheetpath (names /Power_Supply/) (tstamps /63912954/))
       (tstamp 6392AB2C))

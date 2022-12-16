@@ -1,7 +1,7 @@
 Choice of power regulator: LTC3622
 Rationale:
 - availability
-- synchronous rectification (significant due to very low 1.2V output rail)
+- synchronous rectification (significant due to very low 1.1V output rail)
 - dual output
 - 1A capability
 
@@ -14,25 +14,25 @@ Using Ceramic Output Capacitors, page 14, left column.
 C_{out} = 3 \frac{ \Delta I_{out} }{ f_0 * V_{droop} }
 
 Worst case I_out step change is from energy-detect mode to 1000base-T mode, on
-both PHYs simultaneously.  That's 2 * (454 - 28)mA = 0.852A.
+both PHYs simultaneously.  That's 2 * (160 - 10)mA = 0.30A.
 
 For higher efficiency, we'll select the no-dash part number which runs at
 1 MHz, instead of the dash-two 2.25 MHz part.  We can afford the extra board
 area required for the larger inductors and capacitors.  So f_0 = 1e6 Hz.
 
-V_droop, the LAN8810 data sheet section 5.2 Operating Conditions specifies a
-supply voltage range of 1.14 to 1.26V for both VDD12A and VDD12CORE, so that's
-+/- 5%, and V_droop = 0.06V.
+For V_droop, the LAN8830 data sheet section 6.2 Operating Conditions specifies
+a supply voltage range of 1.067 to 1.121V for the VDD11*, so that's +10%/-3%
+(yikes), and V_droop = 0.033V.
 
-The calculation thus yields C_out = 42.6 uF, for the 1.2V side.
+The calculation thus yields C_out = 27.27 uF, for the 1.1V side.
 
 ----------
 
-For the 2.5V rail, delta_I_out = 476 - 102mA = 0.374A.
+For the 2.5V rail, delta_I_out = 2*((13+81) - (16+18))mA = 0.120A.
 
-Acceptable V_droop is (2.5 - 2.25V) = 0.25V, from the same table as above.
+Acceptable V_droop is (2.5 - 2.375V) = 0.125V, from the same table as above.
 
-Thus C_out = 4.488 uF, for the 2.5V side.
+Thus C_out = 2.88 uF, for the 2.5V side.
 
 ----------
 
@@ -43,23 +43,23 @@ L = \frac{ V_{out} }{ f * \Delta I_L } (1 - \frac{ V_{out} }{ V_{in(max)} })
 USB specifies that V_in(max) = 5.25V.
 
 We could allow ripple current to get up to 50% of I_out(max), which would be
-0.454A for the 1.2V side and 0.238A for the 2.5V side.  Let's start there and
+170mA for the 1.1V side and 103mA for the 2.5V side.  Let's start there and
 see what L-values that gets us, then adjust as desired.
 
-L_{1.2V} = 2.04 uH
-L_{2.5V} = 5.50 uH
+L_{1.1V} = 5.11 uH
+L_{2.5V} = 12.71 uH
 
-Looking at 5.8x5.8mm square shielded inductors between 3.3 - 5.0 uH with a
+Looking at 5.8x5.8mm square shielded inductors between 5.3 - 8.2 uH with a
 certain pad style, namely two pads with a circular cutout in the middle, and
 sorting by minimum copper resistance, we find two substitutable candidates for
-L_{1.2V}, both of which are 4.2 uH which cuts the ripple current down to 25%:
-- Bourns SRR5028-4R2Y
-- Wuerth 744053004
-
-The same inquiry for L_{2.5V}, looking between 5.5 - 10 uH, yields a 6.2uH
-inductor:
+L_{1.1V}, both of which are 4.2 uH which cuts the ripple current down to 25%:
 - Bourns SRR5028-6R2Y
 - Wuerth 744053006
+
+The same inquiry for L_{2.5V}, looking between 12 - 27 uH, yields a 15uH,
+100 mohm inductor:
+- Bourns SRR5028-150Y
+- Wuerth 744053150
 
 ----------
 
