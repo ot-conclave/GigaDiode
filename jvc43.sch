@@ -6,7 +6,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 4
 Title "GigaDiode / JVC43B"
-Date "2022-12-12"
+Date "2022-12-15"
 Rev "1"
 Comp "©2022 OT Conclave"
 Comment1 "Licensed under the TAPR Open Hardware License v1.0"
