@@ -1,5 +1,5 @@
 Drill report for /home/user/projects/jvc43/jvc43.kicad_pcb
-Created on Fri 09 Dec 2022 08:13:54 PM PST
+Created on Mon 19 Dec 2022 09:08:37 AM PST
 
 Copper Layer Stackup:
     =============================================================
@@ -14,16 +14,16 @@ Copper Layer Stackup:
 Drill file 'jvc43-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.20mm  0.008"  (113 holes)
-    T2  0.25mm  0.010"  (50 holes)
-    T3  0.38mm  0.015"  (59 holes)
+    T1  0.20mm  0.008"  (90 holes)
+    T2  0.33mm  0.013"  (50 holes)
+    T3  0.38mm  0.015"  (80 holes)
     T4  0.40mm  0.016"  (16 holes)
     T5  0.60mm  0.024"  (4 holes)  (with 4 slots)
     T6  0.80mm  0.031"  (4 holes)  (with 4 slots)
     T7  0.89mm  0.035"  (16 holes)
     T8  1.10mm  0.043"  (8 holes)
 
-    Total plated holes count 270
+    Total plated holes count 268
 
 
 Drill file 'jvc43-NPTH.drl' contains
